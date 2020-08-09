@@ -1,0 +1,16 @@
+{
+  "config-overrides-path": "src/utils/config-overrides.ts",
+  "husky": {
+      "hooks": {
+          "pre-commit": "tsc --noEmit && lint-staged"
+      }
+  },
+  "lint-staged": {
+      "**/*.{js,jsx,tsx,ts,json}": ["prettier --write", "git add"],
+      "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js"
+  },
+  "devDependencies": {
+      "husky": "^4.2.5",
+      "lint-staged": "^10.1.4"
+  }
+}

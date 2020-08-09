@@ -1,0 +1,8 @@
+// .eslintignore
+build/*
+public/*
+src/ultis/*
+*.svg
+*.jpg
+*.png
+*.ico
